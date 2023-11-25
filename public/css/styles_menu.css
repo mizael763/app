@@ -1,0 +1,221 @@
+.body{
+   overflow: auto;
+   height: auto;
+}
+/*---------------menus------------*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI';   
+}
+
+.container{
+   position: relative;;
+   width: 100%;
+   height: 15vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+nav{
+   width: 95%;
+   background: #1f2029  ;
+   border-radius: 50px;
+   padding: 10px;
+   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+ul{
+   display: flex;
+   justify-content: center;
+}
+nav ul li{
+   list-style: none;
+   display: inline-grid;
+   grid-auto-flow: column;
+   align-items: center;
+   margin: 10px;
+   font-size: 18px;
+   font-weight: 500;
+   color: #5e573c;
+   cursor: pointer;
+   position: relative;
+   z-index: 2;
+   transition: 0.3s;
+   padding: 10px 1% 10px 1%;
+   width: max-content;
+}
+
+nav ul li::after{
+   content: '';
+   background: #0000;
+   width: 100%;
+   height: 50%;
+   border-radius: 30px;
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+   opacity: 0;
+}
+
+nav ul li:hover{
+   color: #ffeba7;
+}
+
+nav ul li:hover::after{
+   top: 50%;
+   opacity: 1;
+}
+
+/*-----------sub_menus-------------*/
+i{
+   padding: 0px 5px;
+}
+
+nav ul .container1 {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 19%;
+   background-color: #2a2c3b;
+   border-radius: 10px;
+   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+.container1 ul{
+   display: flex;
+   flex-direction: column;
+}
+
+.container1 ul li{
+   padding: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin: 0;    
+}
+nav ul li:hover > .container1 {
+   display: grid;
+}
+
+.container1 hr{
+   margin: 0 auto;
+   width: 80%;
+   border: 1px solid #35374b;
+}
+hr{
+   margin: 0 auto;
+   width: 100%;
+   border: 1px solid #35374b;
+}
+.container1 ul li a{
+   color: #5e573c;
+   list-style: none;
+   text-decoration: none;
+}
+.container1 ul li a:hover {
+   color: #ffeba7;
+}
+.container ul li a i{
+   position: relative;
+   font-size: 9px;
+   top: -2.5px;
+}
+
+/*------contenidos sub_menus----------*/
+
+/*==========lista_productos===========*/
+
+.container_P{
+   display: grid;
+   grid-template-columns: 1fr 6fr;
+   width: 95%;
+   margin: auto;
+   border-radius: 15px;
+   align-items: center;
+}
+
+.container_P1{
+   position: fixed;
+   top: 25%;
+}
+
+.container_P1 nav{
+   border-radius: 30px;
+}
+.container_P1 ul{
+   flex-direction: column;
+}
+
+.container_P1 ul li{
+   padding: 20px;
+}
+
+/*==========vista_productos===========*/
+
+.container_P2{
+   position: relative;
+   width: 100%;
+   border-radius: 30px;
+}
+.container_3{
+   width: 100%;
+   height: 250px;
+   background: #1f2029;
+   border-radius: 50px;
+   display: grid;
+   align-items: center;
+   grid-template-columns: 1fr 2fr;
+}
+table {
+   width: 95%;
+   margin: 0 auto;
+   border: 30px;
+   border-spacing: 30px;
+}
+
+.img{
+   width: 250px;
+   padding: 10px;
+}
+
+label{
+   text-align: justify;
+   padding: 20px;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-stretch: expanded;
+}
+h1{
+   text-align: center;
+}
+
+p{
+   text-align: justify;
+    padding: 0 20px;
+}
+
+/*==========formulario_producto===========*/
+.formu{
+   margin: auto;
+   width: 80%;
+   background: #1f2029;
+   border-radius: 50px;
+}
+.descripcion-container {
+   position: relative;
+   width: 300px; /* Ajusta el ancho según tus necesidades */
+   margin-bottom: 10px;
+}
+.textarea{
+   width: 100%;
+   height: 150px;
+}
+.contador{
+   position: absolute;
+   color: gray;
+   bottom: 5px;
+   right: -17px;
+}
