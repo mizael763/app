@@ -38,7 +38,8 @@
                       <button type="submit" class="btn mt-4">Entrar</button>
                     </form> 
                   </div>
-                    <a href="#" class="ol">¿Olvidaste tu contraseña?</a> 
+                    <a href="#" class="ol">¿Olvidaste tu contraseña?</a>
+                    <a href="{{ route('register') }}" class="ol" style="top: 295px; left: 28%;">¿Aun no tienes cuenta?</a>
                 </div>
               </div>
               <div class="card-back">
